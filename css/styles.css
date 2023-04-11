@@ -1,0 +1,112 @@
+/* 
+основний колір тексту
+колір тексту параграфів
+колір наведення-акценту
+білий #FFFFFF
+
+шрифт на HEADER
+"The word of" - Caveat
+"Victoria Soltis-Doan" - Dancing Script
+"Author and illustrator of children's books" - Permanent Marker
+*/
+
+body {
+  background-color: #ffffff;
+  /* font-family: "Roboto", Verdana, sans-serif; */
+  /* color: var(--primary-text-color); */
+  letter-spacing: 0.03em;
+}
+
+/* глобальне скидання стилів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+/* прибираємо підкреслення посилання */
+.link {
+  text-decoration: none;
+}
+
+/* прибираємо маркери списку */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list__item {
+  display: flex;
+  gap: 30px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(244, 244, 196);
+  outline: 1px solid tomato;
+}
+
+.section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: rgb(139, 157, 197);
+}
+
+/* --------------------------------- */
+
+.header {
+  display: inline-flex;
+  justify-content: center;
+  /* gap: 30px */
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.header__text {
+  font-family: "Caveat", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: calc(31 / 26);
+  color: rgb(21, 86, 82);
+
+  text-align: center;
+
+  margin-right: 30px;
+}
+
+.header__name {
+  font-family: "Dancing Script", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: calc(31 / 26);
+  color: rgb(124, 54, 135);
+
+  margin-right: 30px;
+}
+
+.header__text-name {
+  font-family: "Permanent Marker", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: calc(31 / 26);
+  color: rgb(21, 86, 82);
+}
