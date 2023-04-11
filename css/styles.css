@@ -11,7 +11,7 @@
 */
 
 body {
-	background-color: #ffffff;
+	background-color: rgb(197, 213, 220);
 	/* font-family: "Roboto", Verdana, sans-serif; */
 	/* color: var(--primary-text-color); */
 	letter-spacing: 0.03em;
@@ -64,8 +64,6 @@ img {
 .section {
 	padding-top: 15px;
 	padding-bottom: 40px;
-
-	background-color: rgb(247, 248, 250);
 }
 
 /* --------------------------------- */
@@ -83,6 +81,7 @@ img {
 .header__container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .header__text {
