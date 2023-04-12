@@ -10,23 +10,59 @@
 "Author and illustrator of children's books" - Permanent Marker
 */
 
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
 body {
 	background-color: rgb(197, 213, 220);
-	/* font-family: "Roboto", Verdana, sans-serif; */
-	/* color: var(--primary-text-color); */
 	letter-spacing: 0.03em;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
 }
 
 /* глобальне скидання стилів */
+body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p,
-ul {
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
 	margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* Элементы a сбрасываем до дефолтных стилей */
+a,
+a:link,
+a:active,
+a:visited {
+	/* text-decoration-skip-ink: auto; */
+	text-decoration: none;
 }
 
 /* прибираємо підкреслення посилання */
@@ -41,13 +77,10 @@ ul {
 	padding: 0;
 }
 
+/* Упрощаем работу с изображениями */
 img {
+	max-width: 100%;
 	display: block;
-}
-
-.list__item {
-	display: flex;
-	gap: 30px;
 }
 
 .container {
@@ -108,6 +141,14 @@ img {
 	margin-right: 30px;
 }
 
+.header__name:hover,
+.header__name:focus {
+	color: rgb(56, 222, 70);
+	/* color: rgb(75, 46, 118); */
+	/* background-color: bisque; */
+	transform: scale(1.05);
+}
+
 .header__text-name {
 	font-family: "Permanent Marker", Verdana, sans-serif;
 	font-style: normal;
@@ -117,8 +158,54 @@ img {
 	color: rgb(21, 86, 82);
 }
 
+/* --------------------------------- */
+
 .body__container {
-	height: 500px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+
+	height: 600px;
 
 	background: rgb(139, 157, 197);
+}
+
+.list__item {
+	display: flex;
+	gap: 30px;
+}
+
+.my-books {
+	position: relative;
+	top: 50px;
+	left: 180px;
+}
+
+.about-me {
+	position: relative;
+	top: 20px;
+	left: 250px;
+}
+
+.contacts {
+	position: relative;
+	top: 300px;
+	right: 330px;
+}
+
+.my-illustrations {
+	position: relative;
+	top: 250px;
+	right: 300px;
+}
+
+.my-books:hover,
+.about-me:hover,
+.contacts:hover,
+.my-illustrations:hover,
+.my-books:focus,
+.about-me:focus,
+.contacts:focus,
+.my-illustrations:focus {
+	transform: scale(1.05);
 }
