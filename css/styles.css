@@ -3,6 +3,7 @@
 колір тексту параграфів
 колір наведення-акценту
 білий #FFFFFF
+колір заливки подложки на головній сторінці - rgb(202,154,155)
 
 шрифт на HEADER
 "The word of" - Caveat
@@ -167,7 +168,7 @@ img {
 
 	height: 600px;
 
-	background: rgb(139, 157, 197);
+	background: rgb(202, 154, 155);
 }
 
 .list__item {
@@ -177,20 +178,20 @@ img {
 
 .my-books {
 	position: relative;
-	top: 50px;
-	left: 180px;
+	top: 60px;
+	left: 150px;
 }
 
 .about-me {
 	position: relative;
-	top: 20px;
+	top: 30px;
 	left: 250px;
 }
 
 .contacts {
 	position: relative;
-	top: 300px;
-	right: 330px;
+	top: 320px;
+	right: 420px;
 }
 
 .my-illustrations {
@@ -208,4 +209,38 @@ img {
 .contacts:focus,
 .my-illustrations:focus {
 	transform: scale(1.05);
+}
+
+.title-chapter {
+	font-family: "Caveat", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: calc(31 / 26);
+	color: rgb(21, 86, 82);
+}
+
+.title-chapter__book {
+	position: relative;
+	bottom: 42px;
+	left: 57px;
+}
+
+.title-chapter__about {
+	position: relative;
+	bottom: 34px;
+	left: 55px;
+}
+
+.title-chapter__contact {
+	position: relative;
+	bottom: 65px;
+	left: 90px;
+	rotate: -20deg;
+}
+
+.title-chapter__illustrations {
+	position: relative;
+	bottom: 40px;
+	left: 30px;
 }
