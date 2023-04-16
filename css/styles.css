@@ -244,11 +244,10 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 auto;
 
 	background-image: url("../images/title/bcg-mobile.jpg");
 	background-attachment: fixed;
-	background-size: auto;
+	background-size: cover;
 	/* background-position: center; */
 
 	/* background: rgb(202, 154, 155); */
@@ -271,12 +270,6 @@ img {
 	position: relative;
 }
 
-/* .my-books {
-	position: relative;
-	top: 60px;
-	left: 150px;
-} */
-
 .thumb > .books__img {
 	position: absolute;
 	bottom: 30px;
@@ -288,12 +281,6 @@ img {
 	top: 195px;
 	left: 20px;
 }
-
-/* .about-me {
-	position: relative;
-	top: 30px;
-	left: 250px;
-} */
 
 .thumb > .about__img {
 	position: absolute;
@@ -325,21 +312,15 @@ img {
 	left: 20px;
 }
 
-/* .my-illustrations {
-	position: relative;
-	top: 250px;
-	right: 300px;
-} */
-
-/* .my-books:hover,
-.about-me:hover,
+/* .books:hover,
+.about:hover,
 .contacts:hover,
-.my-illustrations:hover,
-.my-books:focus,
-.about-me:focus,
+.illustrations:hover,
+.books:focus,
+.about:focus,
 .contacts:focus,
-.my-illustrations:focus {
-	transform: scale(1.05);
+.illustrations:focus {
+	transform: scale(1.03);
 } */
 
 .title-chapter {
