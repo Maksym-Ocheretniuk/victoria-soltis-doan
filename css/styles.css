@@ -11,6 +11,11 @@
 "Author and illustrator of children's books" - Permanent Marker
 */
 
+/* плавна прокрутка по сайту */
+html {
+	scroll-behavior: smooth;
+}
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -25,12 +30,15 @@ ol[class] {
 }
 
 body {
-	background-color: rgb(197, 213, 220);
+	background-color: rgb(256, 256, 256);
 	letter-spacing: 0.03em;
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+
+	/* приховати тільки горизонтальну смугу прокручування */
+	overflow-x: hidden;
 }
 
 /* глобальне скидання стилів */
@@ -84,8 +92,21 @@ img {
 	display: block;
 }
 
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
 .container {
-	width: 1200px;
+	width: 480px;
 
 	padding-left: 15px;
 	padding-right: 15px;
@@ -95,6 +116,15 @@ img {
 	/* outline: 1px solid tomato; */
 }
 
+/* .container {
+	width: 1200px;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}  */
+
 .section {
 	padding-top: 15px;
 	padding-bottom: 40px;
@@ -102,23 +132,43 @@ img {
 
 /* --------------------------------- */
 
-.header {
+/* .header {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	/* gap: 30px */
+	align-items: center; */
+/* gap: 30px */
 
-	padding-top: 30px;
+/* padding-top: 30px;
 	padding-bottom: 20px;
-}
+} */
 
 .header__container {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
+	gap: 20px;
 }
 
-.header__text {
+/* .header-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} */
+
+.header-text__text {
+	font-family: "Caveat", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: calc(20 / 16);
+	color: rgb(21, 86, 82);
+
+	text-align: center;
+}
+
+/* .header__text {
 	font-family: "Caveat", Verdana, sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -129,9 +179,20 @@ img {
 	text-align: center;
 
 	margin-right: 30px;
+} */
+
+.header-text__name {
+	font-family: "Dancing Script", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: calc(30 / 25);
+	color: rgb(124, 54, 135);
+
+	text-align: center;
 }
 
-.header__name {
+/* .header__name {
 	font-family: "Dancing Script", Verdana, sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -140,67 +201,136 @@ img {
 	color: rgb(124, 54, 135);
 
 	margin-right: 30px;
-}
+} */
 
-.header__name:hover,
+/* .header__name:hover,
 .header__name:focus {
 	color: rgb(56, 222, 70);
-	/* color: rgb(75, 46, 118); */
-	/* background-color: bisque; */
 	transform: scale(1.05);
+} */
+
+.header-text__description {
+	font-family: "Permanent Marker", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: calc(13 / 8);
+	text-align: center;
+	color: rgb(21, 86, 82);
 }
 
-.header__text-name {
+/* .header__text-name {
 	font-family: "Permanent Marker", Verdana, sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 17px;
 	line-height: calc(31 / 26);
 	color: rgb(21, 86, 82);
+} */
+
+.header-img {
+	/* position: relative;
+	bottom: 60px;
+	left: 390px; */
+	width: 50px;
 }
 
 /* --------------------------------- */
 
 .body__container {
+	max-width: 450px;
+
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
 
-	height: 600px;
+	background-image: url("../images/title/bcg-mobile.jpg");
+	background-attachment: fixed;
+	background-size: auto;
+	background-position: center;
 
-	background: rgb(202, 154, 155);
+	/* background: rgb(202, 154, 155); */
+	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .list__item {
 	display: flex;
-	gap: 30px;
+	flex-direction: column;
+	align-items: center;
 }
 
-.my-books {
+.circle__img,
+.curve__img {
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+
+.thumb {
+	position: relative;
+}
+
+/* .my-books {
 	position: relative;
 	top: 60px;
 	left: 150px;
+} */
+
+.thumb > .books__img {
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
 }
 
-.about-me {
+.thumb > .books__ribbon {
+	position: absolute;
+	top: 195px;
+	left: 20px;
+}
+
+/* .about-me {
 	position: relative;
 	top: 30px;
 	left: 250px;
+} */
+
+.thumb > .about__img {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
 }
 
-.contacts {
-	position: relative;
-	top: 320px;
-	right: 420px;
+.thumb > .about__ribbon {
+	position: absolute;
+	top: 195px;
+	left: 20px;
 }
 
-.my-illustrations {
+.thumb > .contacts__img {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+.thumb > .illustrations__img {
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+}
+
+.thumb > .illustrations__ribbon {
+	position: absolute;
+	top: 195px;
+	left: 20px;
+}
+
+/* .my-illustrations {
 	position: relative;
 	top: 250px;
 	right: 300px;
-}
+} */
 
-.my-books:hover,
+/* .my-books:hover,
 .about-me:hover,
 .contacts:hover,
 .my-illustrations:hover,
@@ -209,7 +339,7 @@ img {
 .contacts:focus,
 .my-illustrations:focus {
 	transform: scale(1.05);
-}
+} */
 
 .title-chapter {
 	font-family: "Caveat", Verdana, sans-serif;
@@ -220,27 +350,27 @@ img {
 	color: rgb(21, 86, 82);
 }
 
-.title-chapter__book {
-	position: relative;
-	bottom: 42px;
-	left: 57px;
+.thumb > .title-chapter__books {
+	position: absolute;
+	bottom: -10px;
+	left: 70px;
 }
 
-.title-chapter__about {
-	position: relative;
-	bottom: 34px;
-	left: 55px;
+.thumb > .title-chapter__about {
+	position: absolute;
+	bottom: -10px;
+	left: 70px;
 }
 
-.title-chapter__contact {
-	position: relative;
-	bottom: 65px;
-	left: 90px;
-	rotate: -20deg;
+.thumb > .title-chapter__contacts {
+	position: absolute;
+	bottom: 10px;
+	left: 130px;
+	rotate: -25deg;
 }
 
-.title-chapter__illustrations {
-	position: relative;
-	bottom: 40px;
-	left: 30px;
+.thumb > .title-chapter__illustrations {
+	position: absolute;
+	bottom: -10px;
+	left: 45px;
 }
