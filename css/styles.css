@@ -106,7 +106,7 @@ img {
 }
 
 .container {
-	width: 480px;
+	width: 450px;
 
 	padding-left: 15px;
 	padding-right: 15px;
@@ -148,6 +148,7 @@ img {
 	align-items: center;
 	justify-content: flex-end;
 	gap: 20px;
+	padding: 10px 15px;
 }
 
 /* .header-text {
@@ -248,7 +249,7 @@ img {
 	background-image: url("../images/title/bcg-mobile.jpg");
 	background-attachment: fixed;
 	background-size: auto;
-	background-position: center;
+	/* background-position: center; */
 
 	/* background: rgb(202, 154, 155); */
 	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3);
