@@ -90,8 +90,9 @@ a:visited {
 
 /* Упрощаем работу с изображениями */
 img {
-	max-width: 100%;
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -109,7 +110,7 @@ img {
 
 .container {
 	max-width: 480px;
-	height: 100%;
+	/* height: 100%; */
 
 	padding-left: 15px;
 	padding-right: 15px;
@@ -178,19 +179,6 @@ img {
 	text-align: center;
 }
 
-/* .header__text {
-	font-family: "Caveat", Verdana, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: calc(31 / 26);
-	color: rgb(21, 86, 82);
-
-	text-align: center;
-
-	margin-right: 30px;
-} */
-
 .header-text__name {
 	font-family: "Dancing Script", Verdana, sans-serif;
 	font-style: normal;
@@ -203,17 +191,6 @@ img {
 
 	transition: 250ms linear;
 }
-
-/* .header__name {
-	font-family: "Dancing Script", Verdana, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 50px;
-	line-height: calc(31 / 26);
-	color: rgb(124, 54, 135);
-
-	margin-right: 30px;
-} */
 
 .header-text__name:hover,
 .header-text__name:focus {
@@ -229,18 +206,8 @@ img {
 	line-height: calc(13 / 8);
 	text-align: center;
 
-	/* color: rgb(21, 86, 82); */
-	color: linear-gradient(to right, #f44336, #09792b);
-}
-
-/* .header__text-name {
-	font-family: "Permanent Marker", Verdana, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: calc(31 / 26);
 	color: rgb(21, 86, 82);
-} */
+}
 
 .header-img {
 	/* position: relative;
@@ -257,15 +224,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
-	/* background-image: url("../images/title/bcg-mobile2@2x.png");
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; */
-
-	/* background: rgb(202, 154, 155); */
-	/* box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .list__item {
@@ -282,41 +240,23 @@ img {
 	position: absolute;
 	bottom: 30px;
 	left: 10px;
-}
+} */
 
-.thumb > .books__ribbon {
-	position: absolute;
-	top: 195px;
-	left: 20px;
-}
-
-.thumb > .about__img {
-	position: absolute;
-	bottom: 20px;
-	left: 30px;
-}
-
-.thumb > .about__ribbon {
-	position: absolute;
-	top: 195px;
-	left: 20px;
-}
-
-.thumb > .contacts__img {
-	position: absolute;
-	bottom: 10px;
-	left: 20px;
-}
-
-.thumb > .illustrations__img {
+/* .thumb > .illustrations__img {
 	position: absolute;
 	bottom: 40px;
 	left: 10px;
-}
+} */
 
-.thumb > .illustrations__ribbon {
+/* .thumb > .about__img {
 	position: absolute;
-	top: 195px;
+	bottom: 20px;
+	left: 30px;
+} */
+
+/* .thumb > .contacts__img {
+	position: absolute;
+	bottom: 10px;
 	left: 20px;
 } */
 
@@ -349,34 +289,34 @@ img {
 
 .thumb > .title-chapter__books {
 	position: absolute;
-	bottom: 10px;
-	left: 60px;
+	bottom: 22px;
+	left: 85px;
 }
 
 .thumb > .title-chapter__illustrations {
 	position: absolute;
-	bottom: 10px;
-	left: 35px;
+	bottom: 22px;
+	left: 60px;
 }
 
 .thumb > .title-chapter__about {
 	position: absolute;
-	bottom: 5px;
-	left: 50px;
+	bottom: 18px;
+	left: 70px;
 }
 
 .thumb > .title-chapter__contacts {
 	position: absolute;
-	bottom: 20px;
-	left: 115px;
-	rotate: -25deg;
+	bottom: 22px;
+	left: 90px;
 }
 
 /* -------------- section BOOKS ------------------- */
 
+/* реалізація градієнтної заливки кольором літери */
+
 .books__title-container {
 	background: linear-gradient(45deg, #388799, #ba0375, #ffa336);
-	/* overflow: hidden; */
 	background-size: cover;
 	color: #fff;
 	text-align: center;
@@ -396,7 +336,7 @@ img {
 	text-align: center;
 	margin-bottom: 8px;
 
-	width: 100%;
+	/* width: 100%; */
 }
 
 .books__text {
@@ -410,7 +350,7 @@ img {
 	text-align: center;
 	margin-bottom: 8px;
 
-	width: 100%;
+	/* width: 100%; */
 
 	color: black;
 }
