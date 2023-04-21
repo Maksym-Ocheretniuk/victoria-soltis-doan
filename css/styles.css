@@ -134,7 +134,7 @@ img {
 	padding-bottom: 40px;
 }
 
-/* --------------------------------- */
+/* ------------ HEADER --------------------- */
 
 /* .header {
 	display: flex;
@@ -153,6 +153,8 @@ img {
 	justify-content: flex-end;
 	gap: 20px;
 	padding: 10px 15px;
+
+	background-color: #ffffff;
 }
 
 /* .header-text {
@@ -209,6 +211,129 @@ img {
 	left: 390px; */
 	width: 50px;
 }
+
+/* ------- FOOTER -------- */
+
+.footer {
+	background-color: #ffffff;
+}
+
+.footer__nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.nav__list {
+	display: inline-block;
+
+	/* margin: 0 auto; */
+}
+
+.nav__list-item {
+	font-family: "Caveat", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: calc(20 / 16);
+	color: rgb(21, 86, 82);
+
+	text-align: center;
+
+	transition: 250ms linear;
+}
+
+.nav__list-item:hover,
+.nav__list-item:focus {
+	/* transform: scale(1.05); */
+	font-size: 35px;
+}
+
+.footer__socials {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer__socials-list {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.footer__socials-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background-color: yellow;
+	/* color: grey; */
+	transition: 250ms linear;
+}
+
+.footer__socials-link:hover,
+.footer__socials-link:focus {
+	color: blue;
+	transform: scale(1.28);
+}
+
+.footer__socials-icon {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: grey;
+}
+
+/* -- копірайт -- */
+.copyright {
+	border-top: 1px solid rgb(146, 132, 132);
+
+	padding: 20px 20px;
+
+	/* @media screen and (min-width: 768px) {
+		margin-top: 32px;
+		padding: 12px 12px;
+	}
+
+	@media screen and (min-width: 1200) {
+		margin-top: 60px;
+	} */
+}
+
+.copyright__text {
+	display: block;
+	font-family: "Roboto", Verdana, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: calc(21 / 14);
+
+	letter-spacing: 0.02em;
+
+	color: rgb(146, 132, 132);
+
+	text-align: center;
+
+	/* @media screen and (min-width: 768px) {
+		line-height: calc(26 / 14);
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 12px;
+		line-height: calc(22 / 12);
+	} */
+}
+
+/* .br {
+	@media (min-width: 768px) {
+		display: none;
+	}
+} */
 
 /* --------------------------------- */
 
@@ -550,7 +675,7 @@ img {
 	color: #ffffff;
 	background-color: rgb(130, 130, 249);
 	border: 1px solid #ffffff;
-	box-shadow: 0 1px 0 rgb(104, 70, 70);
+	box-shadow: 0 2px 0 rgb(104, 70, 70);
 }
 
 .book__reviews-container {
