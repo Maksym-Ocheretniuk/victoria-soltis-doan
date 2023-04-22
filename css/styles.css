@@ -254,6 +254,9 @@ img {
 .footer__socials {
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	border-top: 1px solid rgb(146, 132, 132);
+	border-bottom: 1px solid rgb(146, 132, 132);
 }
 
 .footer__socials-list {
@@ -292,8 +295,6 @@ img {
 
 /* -- копірайт -- */
 .copyright {
-	border-top: 1px solid rgb(146, 132, 132);
-
 	padding: 20px 20px;
 
 	/* @media screen and (min-width: 768px) {
