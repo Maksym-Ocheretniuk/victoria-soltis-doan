@@ -236,11 +236,12 @@ img {
 /* ------- FOOTER -------- */
 
 .footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: #ffffff;
 }
 
 .footer__nav {
-	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 0 auto;
 
@@ -283,7 +284,7 @@ img {
 .footer__socials-list {
 	display: flex;
 	justify-content: center;
-	gap: 50px;
+	gap: 80px;
 }
 
 .footer__socials-link {
@@ -316,7 +317,7 @@ img {
 
 /* -- копірайт -- */
 .copyright {
-	padding: 20px 20px;
+	padding: 20px 20px 10px 20px;
 
 	/* @media screen and (min-width: 768px) {
 		margin-top: 32px;
@@ -568,6 +569,7 @@ img {
 
 .book__image {
 	display: block;
+
 	margin-top: 15px;
 	margin-bottom: 15px;
 	margin-left: auto;
@@ -761,12 +763,15 @@ img {
 	color: rgb(0, 0, 0);
 }
 
+.illustrations__socials-email,
 .illustrations__socials-link {
 	font-family: inherit;
 	text-decoration: underline;
 	color: #903fd3;
 }
 
+.illustrations__socials-email:hover,
+.illustrations__socials-email:focus,
 .illustrations__socials-link:hover,
 .illustrations__socials-link:focus {
 	/* font-size: 22px; */
