@@ -7,7 +7,7 @@ export const illustrationsGalleryItems = [
 	{
 		preview: "./images/illustrations/Illustration-02_preview.jpg",
 		original: "./images/illustrations/Illustration-02.jpg",
-		description: "Illustration for the annual calendar for the Raduga advertising agenc",
+		description: "Illustration for the annual calendar for the Raduga advertising agency",
 	},
 	{
 		preview: "./images/illustrations/Illustration-03_preview.jpg",
