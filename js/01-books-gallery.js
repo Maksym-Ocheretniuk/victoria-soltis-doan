@@ -14,9 +14,11 @@ function createListItem(books) {
 		.map(
 			({ title, description, bookPage, bookImage, alt }) =>
 				`<li class="book__item">
-          <div class="book__thumb">
-            <a class="link" href="${bookPage}">
-              <img class="book__image" src="${bookImage}" alt="${alt}" width="250" height="250" loading="lazy">
+          <a class="link" href="${bookPage}">
+            <div class="book__card">
+              <div class="book__cover">
+                <img class="book__cover-image" src="${bookImage}" alt="${alt}" width="250" height="250"  loading="lazy">
+              </div>
               <div class="book__caption">
                 <h3 class="book__title">
                   ${title}
@@ -25,9 +27,27 @@ function createListItem(books) {
                   ${description}
                 </p>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </li>`,
 		)
 		.join("");
 }
+
+// `<li class="book__item">
+//   <div class="book__thumb">
+//     <a class="link" href="${bookPage}">
+//       <div class="book__card">
+//         <img class="book__image" src="${bookImage}" alt="${alt}" width="250" height="250" loading="lazy">
+//         <div class="book__caption">
+//           <h3 class="book__title">
+//           ${title}
+//           </h3>
+//           <p class="book__text">
+//           ${description}
+//           </p>
+//         </div>
+//       </div>
+//     </a>
+//   </div>
+// </li>`,
