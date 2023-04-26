@@ -980,18 +980,18 @@ img {
 	/* box-shadow: 0 0 5px black; */
 }
 
-.modal__label {
+/* .modal__label {
 	/* display: block;
 	margin-bottom: 12px;
 
 	font-weight: 700;
 	font-size: 20px;
 	line-height: calc(23 / 20);
-	text-align: center; */
-}
+	text-align: center; 
+} */
 
-.contact__form {
-}
+/* .contact__form {
+} */
 
 .contact__form-group {
 	margin-bottom: 20px;
